@@ -98,8 +98,8 @@ func main() {
 		token := jwt.NewWithClaims(jwt.GetSigningMethod("RS256"), jwt.MapClaims{
 			"login":  l.Login,
 			"groups": "users",
-			"iss":    "http-echo@http-echo.kubernetes.newtech.academy",
-			"sub":    "http-echo@http-echo.kubernetes.newtech.academy",
+			"iss":    "http-echo@http-echo.kubernetes2.overbinary.org",
+			"sub":    "http-echo@http-echo.kubernetes2.overbinary.org",
 			"exp":    time.Now().Add(time.Hour * 72).Unix(),
 			"iat":    time.Now().Unix(),
 		})
